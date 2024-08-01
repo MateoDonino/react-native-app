@@ -52,7 +52,7 @@ const styles = StyleSheet.create({
     marginTop: 5,
   },
   score: {
-    color: "green",
+    color: "#3bd536",
     fontSize: 20,
     fontWeight: "bold",
     marginTop: 10,
