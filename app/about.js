@@ -1,11 +1,14 @@
-import { ScrollView, Text } from "react-native";
+import { Pressable, ScrollView, Text } from "react-native";
 import { Link } from "expo-router";
+import { HomeIcon } from "../components/Icons";
 
 export default function About() {
   return (
-    <ScrollView>
-      <Link href="/" className="text-blue-400 text-xl mt-24">
-        Ir al inicio
+    <ScrollView className="pt-24">
+      <Link asChild href="/">
+        <Pressable>
+          {({ pressed }) => <HomeIcon style={{ opacity: pressed ? 0.5 : 1 }} />}
+        </Pressable>
       </Link>
       <Text className="text-white font-bold mb-8 text-2xl">
         Sobre el proyecto
