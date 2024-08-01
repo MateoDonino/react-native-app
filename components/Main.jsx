@@ -13,16 +13,16 @@ export function Main() {
   }, []);
 
   return (
-    <>
-      <View style={{ paddingTop: instets.top, paddingBottom: instets.bottom }}>
+    <View style={{ paddingTop: instets.top, paddingBottom: instets.bottom }}>
+      {games.length === 0 ? (
+        <ActivityIndicator />
+      ) : (
         <ScrollView>
-          {games.length === 0 ? (
-            <ActivityIndicator />
-          ) : (
-            games.map((game) => <GameCard key={game.slug} game={game} />)
-          )}
+          {games.map((game) => (
+            <GameCard key={game.slug} game={game} />
+          ))}
         </ScrollView>
-      </View>
-    </>
+      )}
+    </View>
   );
 }
