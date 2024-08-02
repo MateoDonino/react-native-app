@@ -8,6 +8,11 @@ export default function TabsLayout() {
         headerShown: false,
         tabBarStyle: { backgroundColor: "black" },
         tabBarActiveTintColor: "white",
+        tabBarLabelStyle: {
+          fontWeight: "bold",
+          fontSize: 10,
+          textTransform: "uppercase",
+        },
       }}
     >
       <Tabs.Screen

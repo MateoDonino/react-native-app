@@ -39,10 +39,10 @@ export default function Detail() {
                 style={{ width: 214, height: 294 }}
               />
               <Score score={gameInfo.score} maxScore={100} />
-              <Text className="text-white text-center font-bold text-xl">
+              <Text className="text-white text-center mt-2 font-bold text-xl">
                 {gameInfo.title}
               </Text>
-              <Text className="text-white/80 mt-4 text-left mb-8 text-base">
+              <Text className="text-white/80 text-left mt-2 text-base">
                 {gameInfo.description}
               </Text>
             </View>

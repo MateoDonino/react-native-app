@@ -10,10 +10,10 @@ export default function About() {
   return (
     <Screen>
       <ScrollView>
-        <Text className="text-white font-bold mb-4 text-2xl text-center">
+        <Text className="text-white font-bold mb-4 text-4xl text-center">
           Sobre el proyecto
         </Text>
-        <Text className="text-white text-white/90 mb-4 leading-5">
+        <Text className="text-white text-white/90 mb-4 leading-5 text-base">
           Este proyecto está desarrollado con React Native y Expo, y utiliza la
           API de Metacritic para mostrar los juegos mejor puntuados. La
           aplicación cuenta con rutas dinámicas y navegación intuitiva,
